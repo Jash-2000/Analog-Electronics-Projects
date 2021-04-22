@@ -1,0 +1,90 @@
+Circuit: * D:\Acads\Analog Electronics\Labs\Lab5\Expt5_Common_mode_gain.asc
+
+Direct Newton iteration for .op point succeeded.
+Semiconductor Device Operating Points:
+                        --- Diodes ---
+Name:    d:u3:3      d:u3:4      d:u3:6      d:u3:5      d:u3:2
+Model:    u3:dx       u3:dx       u3:dx       u3:dx       u3:dx
+Id:     -1.81e-13   -1.81e-13    7.63e-05    7.61e-05   -1.34e-11
+Vd:     -1.80e-01   -1.80e-01    6.48e-01    6.48e-01   -1.34e+01
+Req:     1.00e+12    1.00e+12    3.39e+02    3.40e+02    1.00e+12
+CAP:     0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+
+Name:    d:u3:1      d:u2:3      d:u2:4      d:u2:6      d:u2:5
+Model:    u3:dx       u2:dx       u2:dx       u2:dx       u2:dx
+Id:     -1.34e-11   -1.81e-13   -1.81e-13    7.62e-05    7.62e-05
+Vd:     -1.34e+01   -1.80e-01   -1.80e-01    6.48e-01    6.48e-01
+Req:     1.00e+12    1.00e+12    1.00e+12    3.39e+02    3.39e+02
+CAP:     0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+
+Name:    d:u2:2      d:u2:1      d:u1:3      d:u1:4      d:u1:6
+Model:    u2:dx       u2:dx       u1:dx       u1:dx       u1:dx
+Id:     -1.34e-11   -1.34e-11   -1.81e-13   -1.81e-13    7.63e-05
+Vd:     -1.34e+01   -1.34e+01   -1.80e-01   -1.80e-01    6.48e-01
+Req:     1.00e+12    1.00e+12    1.00e+12    1.00e+12    3.39e+02
+CAP:     0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+
+Name:    d:u1:5      d:u1:2      d:u1:1
+Model:    u1:dx       u1:dx       u1:dx
+Id:      7.61e-05   -1.34e-11   -1.33e-11
+Vd:      6.48e-01   -1.34e+01   -1.33e+01
+Req:     3.40e+02    1.00e+12    1.00e+12
+CAP:     0.00e+00    0.00e+00    0.00e+00
+
+                        --- Bipolar Transistors ---
+Name:     q:u3:2      q:u3:1      q:u2:2      q:u2:1      q:u1:2
+Model:     u3:qx       u3:qx       u2:qx       u2:qx       u1:qx
+Ib:       7.99e-08    7.99e-08    7.99e-08    7.99e-08    7.99e-08
+Ic:       4.99e-05    4.99e-05    4.99e-05    4.99e-05    4.99e-05
+Vbe:      6.97e-01    6.97e-01    6.97e-01    6.97e-01    6.97e-01
+Vbc:     -1.50e+01   -1.50e+01   -1.50e+01   -1.50e+01   -1.50e+01
+Vce:      1.57e+01    1.57e+01    1.57e+01    1.57e+01    1.57e+01
+BetaDC:   6.25e+02    6.25e+02    6.25e+02    6.25e+02    6.25e+02
+Gm:       1.93e-03    1.93e-03    1.93e-03    1.93e-03    1.93e-03
+Rpi:      3.24e+05    3.24e+05    3.24e+05    3.24e+05    3.24e+05
+Rx:       0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Ro:       0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Cbe:      0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Cbc:      0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Cjs:      0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+BetaAC:   6.25e+02    6.25e+02    6.25e+02    6.25e+02    6.25e+02
+Cbx:      0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Ft:       0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+
+Name:     q:u1:1
+Model:     u1:qx
+Ib:       7.99e-08
+Ic:       4.99e-05
+Vbe:      6.97e-01
+Vbc:     -1.50e+01
+Vce:      1.57e+01
+BetaDC:   6.25e+02
+Gm:       1.93e-03
+Rpi:      3.24e+05
+Rx:       0.00e+00
+Ro:       0.00e+00
+Cbe:      0.00e+00
+Cbc:      0.00e+00
+Cjs:      0.00e+00
+BetaAC:   6.25e+02
+Cbx:      0.00e+00
+Ft:       0.00e+00
+
+
+
+Date: Thu Mar 11 13:38:13 2021
+Total elapsed time: 0.156 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 11
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 103
+fillins = 124
+solver = Normal
+Matrix Compiler1:     613 opcodes
+Matrix Compiler2: 10.92 KB object code size

@@ -1,0 +1,20 @@
+Circuit: * D:\Acads\Analog Electronics\Labs\Lab3\Subtractor.asc
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Thu Feb 11 11:23:35 2021
+Total elapsed time: 0.198 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 11
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 40
+fillins = 40
+solver = Normal
+Matrix Compiler1:     211 opcodes
+Matrix Compiler2: 3.93 KB object code size

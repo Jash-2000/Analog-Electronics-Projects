@@ -1,0 +1,20 @@
+Circuit: * E:\BITS Pilani\3-2\AnE\Labs\simulations\Labs\Lab6\HighPassFilter.asc
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Thu Apr 22 14:42:07 2021
+Total elapsed time: 0.151 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 11
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 40
+fillins = 45
+solver = Normal
+Matrix Compiler1:     232 opcodes
+Matrix Compiler2: 4.00 KB object code size

@@ -1,0 +1,21 @@
+Circuit: * D:\Acads\Analog Electronics\Labs\Lab2\Darlington_Waveform.asc
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Wed Feb 03 21:45:56 2021
+Total elapsed time: 0.163 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2079
+traniter = 2067
+tranpoints = 1022
+accept = 1021
+rejected = 1
+matrix size = 9
+fillins = 0
+solver = Normal
+Matrix Compiler1: 350 bytes object code size  0.2/0.1/[0.1]
+Matrix Compiler2: 661 bytes object code size  0.2/0.2/[0.1]
+

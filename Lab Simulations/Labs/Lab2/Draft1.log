@@ -1,0 +1,42 @@
+Circuit: * D:\Acads\Analog Electronics\Labs\Lab2\Draft1.asc
+
+Direct Newton iteration for .op point succeeded.
+Semiconductor Device Operating Points:
+                        --- Bipolar Transistors ---
+Name:       q2          q1
+Model:      npn         npn
+Ib:       2.11e-05    2.09e-07
+Ic:       2.11e-03    2.09e-05
+Vbe:      7.94e-01    6.74e-01
+Vbc:     -8.83e-01   -2.09e-01
+Vce:      1.68e+00    8.83e-01
+BetaDC:   1.00e+02    1.00e+02
+Gm:       8.17e-02    8.09e-04
+Rpi:      1.22e+03    1.24e+05
+Rx:       0.00e+00    0.00e+00
+Ro:       1.72e+29    8.21e+17
+Cbe:      0.00e+00    0.00e+00
+Cbc:      0.00e+00    0.00e+00
+Cjs:      0.00e+00    0.00e+00
+BetaAC:   1.00e+02    1.00e+02
+Cbx:      0.00e+00    0.00e+00
+Ft:       0.00e+00    0.00e+00
+
+
+
+Date: Wed Feb 03 21:29:05 2021
+Total elapsed time: 1.100 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 12
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 9
+fillins = 0
+solver = Normal
+Matrix Compiler1: 350 bytes object code size
+Matrix Compiler2: 661 bytes object code size

@@ -1,0 +1,20 @@
+Circuit: * D:\Acads\Analog Electronics\Labs\Lab2\Common_Emitter_Rin_Value.asc
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Wed Feb 03 20:20:11 2021
+Total elapsed time: 0.179 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 7
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 8
+fillins = 0
+solver = Normal
+Matrix Compiler1:      17 opcodes
+Matrix Compiler2: 554 bytes object code size

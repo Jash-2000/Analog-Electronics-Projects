@@ -1,0 +1,24 @@
+Circuit: * D:\Acads\Analog Electronics\Labs\Lab2\Common_Emitter_Waveform.asc
+
+Direct Newton iteration for .op point succeeded.
+Changing Tseed to 1e-009
+Changing Tseed to 1e-011
+Changing Tseed to 1e-008
+
+Date: Wed Feb 03 22:26:06 2021
+Total elapsed time: 0.190 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2060
+traniter = 2053
+tranpoints = 1014
+accept = 1011
+rejected = 0
+matrix size = 8
+fillins = 0
+solver = Normal
+Matrix Compiler1: 282 bytes object code size  0.1/0.1/[0.0]
+Matrix Compiler2: off  [0.1]/0.1/0.1
+

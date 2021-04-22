@@ -1,0 +1,21 @@
+Circuit: * D:\Acads\Analog Electronics\Labs\Lab9\Astable Symmetrical.asc
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Thu Apr 08 12:56:49 2021
+Total elapsed time: 0.084 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 3962
+traniter = 3951
+tranpoints = 1436
+accept = 1346
+rejected = 90
+matrix size = 14
+fillins = 0
+solver = Normal
+Matrix Compiler1: 384 bytes object code size  0.1/0.1/[0.1]
+Matrix Compiler2: 776 bytes object code size  0.1/0.1/[0.1]
+
