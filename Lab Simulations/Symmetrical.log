@@ -1,0 +1,21 @@
+Circuit: * E:\BITS Pilani\3-2\AnE\Labs\simulations\lab 9&10\lab 9\Symmetrical.asc
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Thu Apr 22 14:14:20 2021
+Total elapsed time: 3.888 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 7095
+traniter = 7087
+tranpoints = 2114
+accept = 1868
+rejected = 246
+matrix size = 14
+fillins = 0
+solver = Normal
+Matrix Compiler1: 384 bytes object code size  0.6/0.3/[0.1]
+Matrix Compiler2: 776 bytes object code size  0.3/0.8/[0.3]
+

@@ -1,0 +1,4 @@
+Circuit: * E:\BITS Pilani\3-2\AnE\Labs\simulations\lab 9&10\lab 10\low voltage regulator.asc
+
+Fatal Error: Unknown subcircuit called in:
+   xu1 vo nc_01 n005 n004 n002 0 n006 nc_02 n001 n001 nc_03 lm723
