@@ -1,0 +1,18 @@
+Circuit: * E:\BITS Pilani\3-2\AnE\Labs\Draft1.asc
+
+
+Date: Thu Feb 18 16:28:38 2021
+Total elapsed time: 0.063 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 0
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 3
+fillins = 0
+solver = Normal
+
