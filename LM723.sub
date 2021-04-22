@@ -1,0 +1,86 @@
+
+*Philips Semiconductors
+.MODEL BD140 PNP(IS=2.9537E-13 BF=201.4 NF=1.0 BR=23.765 NR=1.021 ISE=1.8002E-13 NE=1.5 ISC=7.0433E-12 NC=1.38 VAF=137.0 VAR=8.41 IKF=1.0993 IKR=0.10 RB =1.98 RBM =0.01 IRB =0.011 RE =0.1109 RC =0.01 CJE =2.1982E-10 VJE =0.7211 MJE =0.3685 FC =0.5 CJC =6.8291E-11 VJC =0.5499 MJC =0.3668 XCJC =0.5287 XTB =1.4883 EG =1.2343 XTI =3.0 )
+*Motorola Semiconductors
+.model 2N3055 NPN(Bf=73 Br=2.66 Rb=.81 Rc=.0856 Re=.000856 CJC=1000P PC=.75 MC=.33 Tr=.5703U Is=2.37E-8 CJE=415P PE=.75 ME=.5 TF=99.52N NE=1.26 IK=1 Vceo=60 Icrating=10 mfg=STMicro)
+.MODEL 2N3055H NPN(IS=2.37426e-14 BF=129.119 NF=0.85 VAF=31.1252 IKF=0.990922 ISE=2.47498e-10 NE=1.89002 BR=1.01252 NR=0.924456 VAR=254.624 IKR=2.70227 ISC=2.47498e-10 NC=2.90624 RB=3.66609 IRB=0.1 RBM=0.1 RE=0.000352673 RC=0.0764459 XTB=1.34801 XTI=1.07207 EG=1.206 CJE=9.03089e-08 VJE=0.513954 MJE=0.59999 TF=1e-08 XTF=1.36696 VTF=1.02605 ITF=0.987296 CJC=5e-10 VJC=0.400243 MJC=0.410238 XCJC=0.803124 FC=0.661216 CJS=0 VJS=0.75 MJS=0.5 TR=1e-07 PTF=0 KF=0 AF=1 VCEO=60 ICRATING=15 MFG=Motorola)
+
+******************************************************************************************
+******************************************************************************************
+
+*-----LM723--------------------
+* connections:
+*              NC
+*              | current limit
+*              | | current sense
+*              | | | inverting input
+*              | | | | non-inverting input
+*              | | | | | Vref
+*              | | | | | | Vcc-
+*              | | | | | | | NC
+*              | | | | | | | | Vz
+*              | | | | | | | | | Vout
+*              | | | | | | | | | |  Vc
+*              | | | | | | | | | |  |   Vcc+
+*              | | | | | | | | | |  |  |  freq. compensation
+*              | | | | | | | | | |  |  |  |  NC
+.SUBCKT LM723 2 3 4 5 6 7 9 10 11 12 13
+*
+* Note: This model is based on the National LM723 voltage
+* regulator. All characterization is from data sheet
+* information. The pin configuration corresponds to
+* the dual-in-line package. Therefore, it includes
+* an internal 6.2 volt zener diode between Vout and Vz
+* In the model, GIee & GIcc adjust the short circuit
+* current limit and the standby current. Rsb and the
+* temperature coefficient on RIee also affect the
+* standby current. Bf and the transresistance term
+* on HVref adjust the low frequency output impedence
+* and the load regulation. Rlnreg controls the line
+* regulation and ripple rejection. Rref and its
+* temperature coefficient determine the average
+* temperature coefficient with respect to the output
+* voltage.
+*
+* Standby Current Correction
+*
+Rsb 12 7 300k
+*
+* Error Amplifier
+*
+Rlnreg 12 13 4meg
+* Icc 12 13 DC 583ua
+* Iee 20 7 DC 1166ua
+Iee 0 24 1166ua
+RIee 24 0 1 TC=4E-3
+GIee (20,7),(24,0) 1.0
+GIcc (12,13),(24,0) 0.5
+Q5 12 5 20 Npn1
+Q4 13 4 20 Npn1
+*
+* Voltage Reference
+*
+HVref 22 7 POLY(1) Vmon 7.15 0.0
+Rref 22 6 15ohm TC=0.01
+*
+* Output Stage
+*
+Q1 12 13 21 Npn1
+Q2 11 21 23 Npn1
+Vmon 23 10 DC 0.0
+Re 21 10 15k
+.MODEL Npn1 NPN (Bf=55 Is=1E-14)
+*
+* Frequency Compensation, Current Limit, Current Sense
+*
+Q3 13 2 3 Npn1
+R2 2 7 1.0e12
+R3 3 7 1.0e12
+*
+* Zener Diode (6.2V) to pin 9
+*
+Dz 9 10 Dz
+Rz 9 7 1.0e12
+.MODEL Dz D (Is=0.05p Rs=4 Bv=5.79 Ibv=0.05u)
+*
+.ENDS
