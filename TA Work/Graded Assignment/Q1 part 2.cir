@@ -1,0 +1,18 @@
+* Question 1 of assignment ( corresponding to thevenin equivalent)
+
+*Sources
+v99 2 5 0 ; Metering source( 0 volts )
+H1 3 0 V99 14 ; Current Dependent Voltage Source declared
+
+*Resistors
+R1 1 2 40K
+R2 5 0 4K
+R3 3 4 16K   ; Comment this Line for getting Voc and uncomment it for Isc.
+R4 2 3 4K
+R5 2 3 16K
+
+*Variable sources (set according to question)
+V1 1 0 25 ; Given in Question
+V2 4 0 0     ; Comment this line while finding Voc and uncomment it for Isc.
+
+.op ; Code to run DC analysis
