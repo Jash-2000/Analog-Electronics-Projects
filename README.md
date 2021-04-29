@@ -1,6 +1,8 @@
 # Analog-Electronics-Projects
 Various Projects done using LTSpice for fulfillment of Analog Electronics Course at BITS Pilani
 
+**I was also the Teaching Assistant of this course, working under Dr. Anu Gupta. I have also added my final reports for the graded assignemnt developed for students ( only for reference).** The files are present in **TA Work** folder.
+
 ---
 
 ## To add new library in LTSpice XVII
